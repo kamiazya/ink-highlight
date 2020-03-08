@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "tslint.exclude": ["**/lib/**", "**/node_modules/**"],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
