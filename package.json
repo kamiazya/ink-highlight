@@ -2,20 +2,24 @@
   "name": "ink-highlight",
   "version": "0.0.0",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": "https://github.com/kamiazya/ink-highlight",
   "author": "kamiazya <yuki@kamiazya.tech>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint src -c .eslintrc.json --ext ts,tsx",
+    "build": "rollup -c",
+    "lint": "eslint -c .eslintrc.json --ext ts,tsx src",
     "format": "yarn lint --fix"
   },
   "dependencies": {
     "cli-highlight": "^2.1.4",
     "ink": "^2.7.1",
     "prop-types": "^15.7.2",
-    "react": "^16.13.0"
+    "react": "^16.13.0",
+    "tslib": "*"
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^4.0.0",
     "@types/prop-types": "^15.7.3",
     "@types/react": "^16.9.23",
     "@typescript-eslint/eslint-plugin": "^2.22.0",
@@ -28,6 +32,8 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "prettier": "^1.19.1",
+    "rollup": "^2.0.2",
+    "rollup-plugin-terser": "^5.2.0",
     "typescript": "^3.8.3"
   }
 }
