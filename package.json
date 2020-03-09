@@ -11,12 +11,13 @@
     "lint": "eslint -c .eslintrc.json --ext ts,tsx src",
     "format": "yarn lint --fix"
   },
+  "peerDependencies": {
+    "ink": "^2.0.0",
+    "react": "^16.8.0"
+  },
   "dependencies": {
     "cli-highlight": "^2.1.4",
-    "ink": "^2.7.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.0",
-    "tslib": "*"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^4.0.0",
@@ -31,9 +32,12 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
+    "ink": "^2.7.1",
     "prettier": "^1.19.1",
+    "react": "^16.13.0",
     "rollup": "^2.0.2",
     "rollup-plugin-terser": "^5.2.0",
+    "tslib": "*",
     "typescript": "^3.8.3"
   }
 }
