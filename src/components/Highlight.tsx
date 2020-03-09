@@ -8,7 +8,7 @@ type Props = {
   language?: string;
 };
 
-const Highlight: FC<Props> = ({ code, language }) => {
+export const Highlight: FC<Props> = ({ code, language }) => {
   const highlighted = highlight(code, {
     language,
   });
@@ -23,5 +23,3 @@ Highlight.propTypes = {
 Highlight.defaultProps = {
   language: undefined,
 };
-
-export default Highlight;
