@@ -3,8 +3,35 @@
   "version": "0.0.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "repository": "https://github.com/kamiazya/ink-highlight",
-  "author": "kamiazya <yuki@kamiazya.tech>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamiazya/ink-highlight.git"
+  },
+  "homepage": "https://github.com/kamiazya/ink-highlight",
+  "bugs": {
+    "url": "https://github.com/kamiazya/ink-highlight/issues"
+  },
+  "author": {
+    "name": "kamiazya",
+    "email": "yuki@kamiazya.tech",
+    "url": "https://github.com/kamiazya"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/kamiazya"
+  },
+  "description": "Highlight component for Ink",
+  "keywords": [
+    "ink",
+    "component",
+    "jsx",
+    "react",
+    "highlight",
+    "cli",
+    "terminal",
+    "syntax",
+    "color"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
