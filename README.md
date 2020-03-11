@@ -25,18 +25,15 @@ import React from 'react';
 import { render } from 'ink';
 import { Highlight } from 'ink-highlight';
 
-const sqlCode = `
-SELECT
+const code = `SELECT
   \`id\`,
   \`name\`
-FROM users
+FROM \`users\`
 WHERE
-  id = 1';
+  \`id\` = 1;
 `;
 
-render(
-  <Highlight code={sqlCode} language="sql" />
-);
+render(<Highlight code={code} language="sql" />);
 ```
 
 ## API
