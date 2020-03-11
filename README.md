@@ -36,6 +36,8 @@ WHERE
 render(<Highlight code={code} language="sql" />);
 ```
 
+<img alt="result" src="./demo/result.png" width=200px/>
+
 ## API
 
 ### Highlight Component

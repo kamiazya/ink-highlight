@@ -7,7 +7,8 @@
   },
   "markdownlint.config": {
     "default": true,
-    "MD041": false
+    "MD041": false,
+    "MD033": false
   },
   "tslint.exclude": ["**/lib/**", "**/node_modules/**"],
   "typescript.tsdk": "node_modules/typescript/lib"

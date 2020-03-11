@@ -8,4 +8,5 @@
 .yarnrc
 rollup.config.js
 src
+demo
 tsconfig.json
