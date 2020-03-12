@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Highlight Component How cli-highlight is called 1`] = `highlight("SELECT * FROM users;", {"language":"sql"})`;
+
+exports[`Highlight Component How cli-highlight is called 2`] = `highlight("console.log('Hello world!!')", {"language":"js"})`;
+
+exports[`Highlight Component How cli-highlight is called 3`] = `highlight("console.log('Hello world!!')", {})`;
