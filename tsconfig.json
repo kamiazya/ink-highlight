@@ -9,7 +9,7 @@
     "moduleResolution": "Node",
     "removeComments": true,
     "importHelpers": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "strict": true,
     "strictNullChecks": true,
     "esModuleInterop": true,

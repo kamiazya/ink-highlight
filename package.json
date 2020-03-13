@@ -35,6 +35,7 @@
   "license": "MIT",
   "scripts": {
     "demo": "ts-node -P demo/tsconfig.json demo/main",
+    "test": "jest",
     "build": "rollup -c",
     "lint": "eslint -c .eslintrc.json --ext ts,tsx src",
     "format": "yarn lint --fix"
@@ -49,6 +50,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^4.0.0",
+    "@types/jest": "^25.1.4",
     "@types/prop-types": "^15.7.3",
     "@types/react": "^16.9.23",
     "@typescript-eslint/eslint-plugin": "^2.22.0",
@@ -57,14 +59,19 @@
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "ink": "^2.7.1",
+    "ink-testing-library": "^1.0.3",
+    "jest": "^25.1.0",
+    "jest-snapshot-serializer-raw": "^1.1.0",
     "prettier": "^1.19.1",
     "react": "^16.13.0",
     "rollup": "^2.0.2",
     "rollup-plugin-terser": "^5.2.0",
+    "ts-jest": "^25.2.1",
     "ts-node": "^8.6.2",
     "tslib": "*",
     "typescript": "^3.8.3"
