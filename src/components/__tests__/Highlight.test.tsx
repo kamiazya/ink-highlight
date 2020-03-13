@@ -12,4 +12,12 @@ describe('Highlight Component', () => {
     const { lastFrame } = render(<Highlight code={code} language={language} />);
     expect(wrap(lastFrame())).toMatchSnapshot();
   });
+
+  test('Change code and language', () => {
+    const { lastFrame, rerender } = render(<Highlight code="SELECT * FROM users;" language="sql" />);
+    expect(wrap(lastFrame())).toMatchSnapshot();
+
+    rerender(<Highlight code="console.log('Hello world!!')" language="js" />);
+    expect(wrap(lastFrame())).toMatchSnapshot();
+  });
 });
