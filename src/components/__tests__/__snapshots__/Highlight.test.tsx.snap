@@ -6,6 +6,12 @@ exports[`Highlight Component Change code and language 2`] = `highlight("console.
 
 exports[`Highlight Component How cli-highlight is called 1`] = `highlight("SELECT * FROM users;", {"language":"sql"})`;
 
-exports[`Highlight Component How cli-highlight is called 2`] = `highlight("console.log('Hello world!!')", {"language":"js"})`;
+exports[`Highlight Component How cli-highlight is called 2`] = `highlight("console.log('Hello world!!')", {"language":"javascript"})`;
 
-exports[`Highlight Component How cli-highlight is called 3`] = `highlight("console.log('Hello world!!')", {})`;
+exports[`Highlight Component How cli-highlight is called 3`] = `highlight("console.log('Hello world!!')", {"language":"javascript","languageSubset":["typescript"]})`;
+
+exports[`Highlight Component How cli-highlight is called 4`] = `highlight("print \\"Hello world!\\"", {"ignoreIllegals":false,"language":"python"})`;
+
+exports[`Highlight Component How cli-highlight is called 5`] = `highlight("<php?\\n echo \\"Hello world!\\";", {"language":"php"})`;
+
+exports[`Highlight Component How cli-highlight is called 6`] = `highlight("p \\"Hello world!\\"", {"continuation":{}})`;

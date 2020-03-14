@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HighlightOptionsContext How cli-highlight is called 1`] = `highlight("SELECT * FROM users;", {})`;
+
+exports[`HighlightOptionsContext How cli-highlight is called 2`] = `highlight("console.log('Hello world!!')", {"language":"javascript"})`;
+
+exports[`HighlightOptionsContext How cli-highlight is called 3`] = `highlight("console.log('Hello world!!')", {"language":"javascript","languageSubset":["typescript"]})`;
+
+exports[`HighlightOptionsContext How cli-highlight is called 4`] = `highlight("print \\"Hello world!\\"", {"ignoreIllegals":false,"language":"python"})`;
+
+exports[`HighlightOptionsContext How cli-highlight is called 5`] = `highlight("<php?\\n echo \\"Hello world!\\";", {"language":"php"})`;
+
+exports[`HighlightOptionsContext How cli-highlight is called 6`] = `highlight("p \\"Hello world!\\"", {"continuation":{}})`;
