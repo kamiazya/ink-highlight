@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { render } from 'ink-testing-library';
 import { wrap } from 'jest-snapshot-serializer-raw';

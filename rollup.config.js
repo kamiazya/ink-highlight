@@ -1,4 +1,5 @@
-import typescript from '@rollup/plugin-typescript';
+import sucrase from '@rollup/plugin-sucrase';
+import resolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 
 export default {
@@ -9,6 +10,15 @@ export default {
       dir: 'lib',
     },
   ],
-  plugins: [typescript(), terser()],
+  plugins: [
+    resolve({
+      extensions: ['.ts', '.tsx'],
+    }),
+    sucrase({
+      exclude: ['node_modules/**'],
+      transforms: ['jsx', 'typescript', 'imports'],
+    }),
+    terser(),
+  ],
   external: ['react', 'prop-types', 'ink', 'cli-highlight'],
 };
