@@ -37,6 +37,7 @@
     "prettier/prettier": "error",
     "import/extensions": "off",
     "import/prefer-default-export": "off",
+    "react/forbid-prop-types": "off",
     "react/jsx-filename-extension": [
       1,
       {

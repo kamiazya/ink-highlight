@@ -1,25 +1,46 @@
-import React, { FC } from 'react';
+import React, { FC, useContext } from 'react';
 import PropTypes from 'prop-types';
-import { Box } from 'ink';
 import { highlight } from 'cli-highlight';
+import { HighlightOptions, HighlightOptionsContext } from './HighlightOptionsContext';
+import { HighlightThemeContext } from './HighlightThemeContext';
 
-type Props = {
+export type Props = {
   code: string;
-  language?: string;
-};
+} & HighlightOptions;
 
-export const Highlight: FC<Props> = ({ code, language }) => {
-  const highlighted = highlight(code, {
-    language,
-  });
-  return <Box>{highlighted}</Box>;
+export const Highlight: FC<Props> = ({ code, ...propOption }) => {
+  const theme = useContext(HighlightThemeContext);
+  const contextOption = useContext(HighlightOptionsContext);
+
+  const language = propOption.language ?? contextOption.language;
+  const ignoreIllegals = propOption.ignoreIllegals ?? contextOption.ignoreIllegals;
+  const continuation = propOption.continuation ?? contextOption.continuation;
+  const languageSubset = propOption.languageSubset ?? contextOption.languageSubset;
+
+  return (
+    <>
+      {highlight(code, {
+        language,
+        ignoreIllegals,
+        continuation,
+        languageSubset,
+        theme,
+      })}
+    </>
+  );
 };
 
 Highlight.propTypes = {
   code: PropTypes.string.isRequired,
   language: PropTypes.string,
+  ignoreIllegals: PropTypes.bool,
+  continuation: PropTypes.any,
+  languageSubset: PropTypes.arrayOf(PropTypes.string.isRequired),
 };
 
 Highlight.defaultProps = {
   language: undefined,
+  ignoreIllegals: undefined,
+  continuation: undefined,
+  languageSubset: undefined,
 };

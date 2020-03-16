@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HighlightThemeContext Theme applied 1`] = `highlight("console.log('Hello world!');", {"theme":{"test":true}})`;
