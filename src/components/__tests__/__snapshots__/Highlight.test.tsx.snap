@@ -10,7 +10,7 @@ exports[`Highlight Component How cli-highlight is called 2`] = `highlight("conso
 
 exports[`Highlight Component How cli-highlight is called 3`] = `highlight("console.log('Hello world!!')", {"language":"javascript","languageSubset":["typescript"]})`;
 
-exports[`Highlight Component How cli-highlight is called 4`] = `highlight("print \\"Hello world!\\"", {"language":"python","ignoreIllegals":false})`;
+exports[`Highlight Component How cli-highlight is called 4`] = `highlight("print \\"Hello world!\\"", {"ignoreIllegals":false,"language":"python"})`;
 
 exports[`Highlight Component How cli-highlight is called 5`] = `highlight("<php?\\n echo \\"Hello world!\\";", {"language":"php"})`;
 
