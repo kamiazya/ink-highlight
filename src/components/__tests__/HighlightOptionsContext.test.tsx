@@ -14,7 +14,6 @@ describe('HighlightOptionsContext', () => {
     },
     { attributes: { code: 'print "Hello world!"', language: 'python' }, context: { ignoreIllegals: false } },
     { attributes: { code: '<php?\n echo "Hello world!";', language: 'php' }, context: {} },
-    { attributes: { code: 'p "Hello world!"' }, context: { continuation: {} } },
   ])('How cli-highlight is called', ({ attributes, context }) => {
     const { lastFrame } = render(
       <HighlightOptionsContext.Provider value={context}>
@@ -22,6 +21,6 @@ describe('HighlightOptionsContext', () => {
         <Highlight {...attributes} />
       </HighlightOptionsContext.Provider>,
     );
-    expect(wrap(lastFrame())).toMatchSnapshot();
+    expect(wrap(lastFrame() as string)).toMatchSnapshot();
   });
 });
