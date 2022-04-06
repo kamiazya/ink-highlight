@@ -13,5 +13,3 @@ exports[`Highlight Component How cli-highlight is called 3`] = `highlight("conso
 exports[`Highlight Component How cli-highlight is called 4`] = `highlight("print \\"Hello world!\\"", {"language":"python","ignoreIllegals":false})`;
 
 exports[`Highlight Component How cli-highlight is called 5`] = `highlight("<php?\\n echo \\"Hello world!\\";", {"language":"php"})`;
-
-exports[`Highlight Component How cli-highlight is called 6`] = `highlight("p \\"Hello world!\\"", {"continuation":{}})`;

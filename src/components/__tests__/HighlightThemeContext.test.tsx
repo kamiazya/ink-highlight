@@ -7,12 +7,12 @@ import { HighlightThemeContext } from '../HighlightThemeContext';
 
 describe('HighlightThemeContext', () => {
   test('Theme applied', () => {
-    const theme = { test: true } as Theme;
+    const theme = Object.freeze({ test: true }) as Theme;
     const { lastFrame } = render(
       <HighlightThemeContext.Provider value={theme}>
         <Highlight code="console.log('Hello world!');" />
       </HighlightThemeContext.Provider>,
     );
-    expect(wrap(lastFrame())).toMatchSnapshot();
+    expect(wrap(lastFrame() as string)).toMatchSnapshot();
   });
 });

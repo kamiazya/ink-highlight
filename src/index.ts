@@ -3,4 +3,3 @@ import { HighlightOptionsContext, HighlightOptions } from './components/Highligh
 import { HighlightThemeContext } from './components/HighlightThemeContext';
 
 export { Highlight, HighlightOptionsContext, HighlightOptions, HighlightThemeContext };
-export default Highlight;

@@ -9,5 +9,3 @@ exports[`HighlightOptionsContext How cli-highlight is called 3`] = `highlight("c
 exports[`HighlightOptionsContext How cli-highlight is called 4`] = `highlight("print \\"Hello world!\\"", {"language":"python","ignoreIllegals":false})`;
 
 exports[`HighlightOptionsContext How cli-highlight is called 5`] = `highlight("<php?\\n echo \\"Hello world!\\";", {"language":"php"})`;
-
-exports[`HighlightOptionsContext How cli-highlight is called 6`] = `highlight("p \\"Hello world!\\"", {"continuation":{}})`;
